@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectSelector">
+
+
+    <Button
+        android:id="@+id/selectstudentsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#611aef"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Select Students"
+        android:textColor="#FFFFFF" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/submitbtn"
+        android:id="@+id/pb"
+        android:visibility="gone"
+        android:layout_marginStart="36dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addsubjectbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deletesubjectbtn"
+        android:layout_alignTop="@+id/selectstudentsbtn"
+        android:src="@drawable/add" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/deletesubjectbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="36dp"
+        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+    <ExpandableListView
+        android:id="@+id/expanded_lv"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp">
+
+    </ExpandableListView>
+
+    <EditText
+        android:id="@+id/subjectname"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Subject Name"
+        android:visibility="gone"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/subjectcode"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/subjectname"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Sub-Code"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/submitsubbtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/subjectname"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

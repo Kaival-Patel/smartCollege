@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlay"
+    android:theme="@style/Widget.AppCompat.Light.ActionBar"
+    tools:context=".welcome_page">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Welcome Back,"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/welcomeText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Choose to Continue"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textColor="#a3a8af"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/signin_faculty"
+        android:layout_width="199dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/gradient_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Faculty"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/signin_student"
+        android:layout_width="199dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Student"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9758630723010439/7855444453" />
+
+</LinearLayout>

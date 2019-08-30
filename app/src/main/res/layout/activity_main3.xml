@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Select the Students whose marks is to be Entered"
+        android:textSize="20dp"
+        android:id="@+id/headingtv"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"/>
+
+    <ExpandableListView
+        android:id="@+id/expanded_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp">
+
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/fillmarksbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#611aef"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Fill Marks"
+        android:textColor="#FFFFFF" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/submitbtn"
+        android:id="@+id/pb"
+        android:visibility="gone"
+        android:layout_marginStart="36dp" />
+
+
+</RelativeLayout>

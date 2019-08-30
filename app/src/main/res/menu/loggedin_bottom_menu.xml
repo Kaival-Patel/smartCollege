@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Upload"
+    android:id="@+id/upload_bottom"
+    android:icon="@drawable/upload_blue_material"
+    android:enabled="true" />
+    <item android:title="Edit"
+        android:id="@+id/edit_bottom"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:enabled="true" />
+    <item android:title="Notifications"
+        android:id="@+id/notification_bottom"
+        android:enabled="true"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        />
+</menu>

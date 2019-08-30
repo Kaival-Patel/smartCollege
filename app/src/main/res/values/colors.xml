@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#611aef</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whiteTextcolor">#FFFFFF</color>
+    <color name="greyishColor">#80FFFFFF</color>
+    <color name="transparentgrey">#cccccc</color>
+    <color name="Green">#3dbc2f</color>
+    <color name="Orange">#E73355</color>
+    <color name="Violet">#611aef</color>
+    <color name="Blue">#5b9aff</color>
+    <color name="DarkBlueViolet">#22517a</color>
+    <color name="BlueThemeColor">#6599ff</color>
+</resources>

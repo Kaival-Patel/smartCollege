@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "149818237673",
+    "firebase_url": "https://smartcollege-28785.firebaseio.com",
+    "project_id": "smartcollege-28785",
+    "storage_bucket": "smartcollege-28785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149818237673:android:cc06307141265be4",
+        "android_client_info": {
+          "package_name": "com.kaival.smartcollege"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149818237673-li6mq9id19aa4ja75af78di8eh7ka4hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaival.smartcollege",
+            "certificate_hash": "9ab359959bb27231746e303607a7bba537e853c3"
+          }
+        },
+        {
+          "client_id": "149818237673-t58d1jorg04miib6bn5b469n9gomkjgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTESiotWFr3T2Yxmq5HU54A1zmLJmVSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149818237673-t58d1jorg04miib6bn5b469n9gomkjgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

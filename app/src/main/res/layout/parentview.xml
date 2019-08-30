@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B1 Batch"
+        android:textSize="25dp"
+        android:textColor="#1e0ef7"
+        android:textStyle="bold"
+        android:id="@+id/parenttext"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sclayout"
+    android:background="@drawable/bg_animation_1"
+    tools:context=".frag_fac_sign_up">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/enroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="35dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:hint="Enter Your Faculty ID (GTU)"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#98a6bc"
+            android:inputType="number"
+            android:textColor="#E73355"
+            android:maxLength="5"
+            android:background="@drawable/white_rectangle"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="35dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:hint="Enter Your Email"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#98a6bc"
+            android:inputType="textEmailAddress"
+            android:textColor="#E73355"
+            android:background="@drawable/white_rectangle"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/visibleornotvisible"
+            app:passwordToggleTint="#E73355"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="40dp"
+            app:hintEnabled="false">
+            <EditText
+                android:id="@+id/signuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Your Password"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="#98a6bc"
+                android:inputType="textPassword"
+                android:textColor="#E73355"
+                android:background="@drawable/white_rectangle"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/visibleornotvisible"
+            app:passwordToggleTint="#E73355"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="30dp"
+            app:hintEnabled="false"
+            >
+            <EditText
+                android:id="@+id/signupconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter confirmed Password"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="#98a6bc"
+                android:inputType="textPassword"
+                android:textColor="#E73355"
+                android:background="@drawable/white_rectangle"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signupbuttonfrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#E73355"
+            android:text="Sign Up"
+            android:textColor="@color/whiteTextcolor" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_marginTop="20dp"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".stdatabasesetting">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Service Type"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/servicetv"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/servicespin"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:popupBackground="#72cbff"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <!--for creating new Database!-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch Year/Admission Year"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/yeartv"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/yearspin"
+                android:visibility="gone"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:popupBackground="#72cbff"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Department(Students)"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/departmenttv"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/departmentsp"
+                android:visibility="gone"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:popupBackground="#72cbff"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Choose the division"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/divisiontv"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/divisionspin"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:popupBackground="#72cbff"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Number of Batches?"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/noofbatchestv"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/noofbatchesspin"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:popupBackground="#72cbff"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Enter Password provided to HOD"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/passwordtv"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/visibleornotvisible"
+                app:passwordToggleTint="#E73355"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/textlayoutpassword"
+                android:visibility="gone"
+                app:hintEnabled="false"
+                >
+                <EditText
+                    android:id="@+id/passwordet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="40dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="80dp"
+                    android:hint="Enter HOD Password"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColorHint="#98a6bc"
+                    android:inputType="textPassword"
+                    android:visibility="gone"
+                    android:background="@drawable/white_rectangle"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+       <!-- <com.varunest.sparkbutton.SparkButton
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+        </com.varunest.sparkbutton.SparkButton>!-->
+        <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            app:sparkbutton_activeImage="@drawable/createactive"
+            app:sparkbutton_inActiveImage="@drawable/createinactive"
+            app:sparkbutton_iconSize="40dp"
+            app:sparkbutton_primaryColor="@color/Violet"
+            app:sparkbutton_secondaryColor="@color/Blue"
+            />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9758630723010439/7855444453" />
+    </LinearLayout>
+
+</ScrollView>
